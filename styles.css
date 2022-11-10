@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--card-primary: #f7dd43;
+--border-primary: #746615;
+--bg-primary: #1d1c19;
+
+}
+
+body.blue {
+    --card-primary: orange;
+    --border-primary: pink;
+    --bg-primary: #338af3;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #121214;
+    background-image: url('./splash.png');
+    background-position-x: center;
+    background-position-y: 15%;
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#App {
+    width: fit-content;
+    margin: 52px auto;
+}
+
+header {
+    margin-bottom: 63px;
+    text-align: center;
+}
+
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.card {
+    padding: 32px 23px;
+    text-align: center;
+
+    background: var(--bg-primary);
+    border-bottom: 2px solid var(--card-primary);
+    border-radius: 6px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#cards h2 {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 53px;
+
+    color: var(--card-primary);
+    align-items: center;
+}
+
+#cards span {
+    color: #e1e1e6;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.card ul li {
+   
+    gap: 24px;
+}
+
+.card  ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+   
+}
+
+/* #cards ul li + li {
+    padding-top: 24px;
+    border-top: 5px solid #323238;
+} */
+
+.card ul li strong {
+    font-weight: 900;
+    font-size: 1rem;
+    color: #e1e1e6;
+    line-height: 125%;
+}
+
+#cards ul li img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+
+    text-align: center;
+
+}
+
+a {
+    color: #e1e1e6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--card-primary);
+}
+
+@media (min-width: 400px) {
+    #cards {
+        /* max-width: 70px; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
